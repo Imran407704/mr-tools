@@ -2,6 +2,8 @@
 This is Simple Bash Script for Installing Tools from GO.
 
 
+This Script is only for Root User
+
 
 # How to install ?
 ```
