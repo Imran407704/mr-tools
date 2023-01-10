@@ -14,6 +14,7 @@ apt-get install golang;
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
 printf "Installing Tools\n"
+printf "assetfinder,waybackurls,httprobe,subjs,ffuf,gospider,jaeles,gau,gauplus,cariddi,getJS,headi,hakrawler,hakrevdns,hakcheckurl,haktrails,anew,subfinder,httpx,naabu,nuclei,mapcidr,notify,dnsx,katana,uncover,dnsprobe\n"
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
