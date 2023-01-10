@@ -42,7 +42,7 @@ go install -v github.com/projectdiscovery/katana/cmd/katana@latest;
 go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest;
 go install -v github.com/projectdiscovery/dnsprobe;
 
-echo "Copying Tools Binary file to usr/local/bin"
+echo "Copying Binary file to usr/local/bin"
 cp $HOME/go/bin/* /usr/local/bin
 
 echo "Installing PIP tools"
