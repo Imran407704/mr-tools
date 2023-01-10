@@ -1,12 +1,12 @@
 #!/bin/sh
 
-echo "Installing Pre-requisites"
+printf "Installing Pre-requisites" \n\n
 
 apt-get install python3;
 apt install python3-pip;
 apt-get install golang;
 
-echo "Installing Tools"
+printf "Installing Tools" \n\n
 
 go install -v github.com/tomnomnom/assetfinder@latest;
 go install -v github.com/tomnomnom/waybackurls@latest;
@@ -21,7 +21,7 @@ go install -v github.com/edoardottt/cariddi/cmd/cariddi@latest;
 go install -v github.com/003random/getJS@latest;
 go install -v github.com/mlcsec/headi@latest;
 
-echo "Installing hakluke tools"
+printf "Installing hakluke tools" \n\n
 
 go install -v github.com/hakluke/hakrawler@latest;
 go install -v github.com/hakluke/hakrevdns@latest;
@@ -29,7 +29,7 @@ go install -v github.com/hakluke/hakcheckurl@latest;
 go install -v github.com/hakluke/haktrails@latest;
 go install -v github.com/tomnomnom/anew;
 
-echo "Installing Project Discovery Tools"
+printf "Installing Project Discovery Tools" \n\n
 
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest;
 go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest;
@@ -42,12 +42,12 @@ go install -v github.com/projectdiscovery/katana/cmd/katana@latest;
 go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest;
 go install -v github.com/projectdiscovery/dnsprobe;
 
-echo "Copying Binary file to usr/local/bin"
+printf "Copying Binary file to usr/local/bin" \n\n
 cp $HOME/go/bin/* /usr/local/bin
 
-echo "Installing PIP tools"
+printf "Installing PIP tools" \n\n
 
 pip3 install arjun;
 pip install xsrfprobe;
 
-echo "Done"
+printf "Done" \n\n
