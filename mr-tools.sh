@@ -14,7 +14,7 @@ apt-get install golang -y;
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
 printf "Installing Tools\n"
-printf "assetfinder,waybackurls,httprobe,subjs,ffuf,gospider,jaeles,gau,gauplus,cariddi,getJS,headi,hakrawler,hakrevdns,hakcheckurl,haktrails,anew,subfinder,httpx,naabu,nuclei,mapcidr,notify,dnsx,katana,uncover,dnsprobe\n"
+printf "amass,assetfinder,waybackurls,httprobe,subjs,ffuf,gospider,jaeles,gau,gauplus,cariddi,getJS,headi,hakrawler,hakrevdns,hakcheckurl,haktrails,anew,subfinder,httpx,naabu,nuclei,mapcidr,notify,dnsx,katana,uncover,dnsprobe\n"
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
@@ -30,6 +30,7 @@ go install -v github.com/bp0lr/gauplus@latest;
 go install -v github.com/edoardottt/cariddi/cmd/cariddi@latest;
 go install -v github.com/003random/getJS@latest;
 go install -v github.com/mlcsec/headi@latest;
+go install -v github.com/OWASP/Amass/v3/...@master
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
