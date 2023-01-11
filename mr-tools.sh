@@ -7,9 +7,9 @@ printf "Installing Pre-requisites\n"
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-apt-get install python3;
-apt install python3-pip;
-apt-get install golang;
+apt-get install python3 -y;
+apt install python3-pip -y;
+apt-get install golang -y;
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
