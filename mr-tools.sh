@@ -40,7 +40,7 @@ go install -v github.com/hakluke/hakrawler@latest;
 go install -v github.com/hakluke/hakrevdns@latest;
 go install -v github.com/hakluke/hakcheckurl@latest;
 go install -v github.com/hakluke/haktrails@latest;
-go install -v github.com/tomnomnom/anew;
+go install -v github.com/tomnomnom/anew@latest;
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
@@ -57,7 +57,7 @@ go install -v github.com/projectdiscovery/notify/cmd/notify@latest;
 go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest;
 go install -v github.com/projectdiscovery/katana/cmd/katana@latest;
 go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest;
-go install -v github.com/projectdiscovery/dnsprobe;
+go install -v github.com/projectdiscovery/dnsprobe@latest;
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
