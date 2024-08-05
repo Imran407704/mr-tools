@@ -7,6 +7,7 @@ printf "Installing Pre-requisites\n"
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
+apt-get update -y;
 apt-get install python3 -y;
 apt install python3-pip -y;
 apt-get install golang -y;
@@ -14,7 +15,7 @@ apt-get install golang -y;
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
 printf "Installing Tools\n"
-printf "amass,assetfinder,waybackurls,httprobe,subjs,ffuf,gospider,jaeles,gau,gauplus,cariddi,getJS,headi,hakrawler,hakrevdns,hakcheckurl,haktrails,anew,subfinder,httpx,naabu,nuclei,mapcidr,notify,dnsx,katana,uncover,dnsprobe\n"
+printf "amass,assetfinder,dalfox,waybackurls,httprobe,subjs,ffuf,gospider,jaeles,gau,gauplus,cariddi,getJS,headi,hakrawler,hakrevdns,hakcheckurl,haktrails,anew,subfinder,httpx,naabu,nuclei,mapcidr,notify,dnsx,katana,uncover,dnsprobe\n"
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
@@ -31,15 +32,16 @@ go install -v github.com/edoardottt/cariddi/cmd/cariddi@latest;
 go install -v github.com/003random/getJS@latest;
 go install -v github.com/mlcsec/headi@latest;
 go install -v github.com/OWASP/Amass/v3/...@master
+go install github.com/hahwul/dalfox/v2@latest;
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
 printf "Installing hakluke tools\n" 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-go install -v github.com/hakluke/hakrawler@latest;
-go install -v github.com/hakluke/hakrevdns@latest;
-go install -v github.com/hakluke/hakcheckurl@latest;
+go install github.com/hakluke/hakrawler@latest;
+go install github.com/hakluke/hakrevdns@latest;
+go install github.com/hakluke/hakcheckurl@latest;
 go install -v github.com/hakluke/haktrails@latest;
 go install -v github.com/tomnomnom/anew@latest;
 
@@ -56,7 +58,7 @@ go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest;
 go install -v github.com/projectdiscovery/mapcidr/cmd/mapcidr@latest;
 go install -v github.com/projectdiscovery/notify/cmd/notify@latest;
 go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest;
-go install -v github.com/projectdiscovery/katana/cmd/katana@latest;
+go install github.com/projectdiscovery/katana/cmd/katana@latest;
 go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest;
 go install -v github.com/projectdiscovery/dnsprobe@latest;
 
