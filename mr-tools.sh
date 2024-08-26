@@ -1,9 +1,8 @@
 #!/bin/sh
 
-
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
-printf "Installing Pre-requisites\n"
+printf "Installing Pre-Requisites\n"
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
@@ -15,13 +14,14 @@ apt-get install golang -y;
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
 printf "Installing Tools\n"
-printf "amass,assetfinder,dalfox,waybackurls,httprobe,subjs,ffuf,gospider,jaeles,gau,gauplus,cariddi,getJS,headi,hakrawler,hakrevdns,hakcheckurl,haktrails,anew,subfinder,httpx,naabu,nuclei,mapcidr,notify,dnsx,katana,uncover,dnsprobe\n"
+printf "Amass,Assetfinder,Dalfox,Waybackurls,HTTProbe,Subjs,Ffuf,GoSpider,Jaeles,Gau,GauPlus,Cariddi,getJS,headi,hakrawler,hakrevdns,hakcheckurl,haktrails,anew,subfinder,httpx,naabu,nuclei,mapcidr,notify,dnsx,katana,uncover,dnsprobe\n"
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
 go install -v github.com/tomnomnom/assetfinder@latest;
 go install -v github.com/tomnomnom/waybackurls@latest;
 go install -v github.com/tomnomnom/httprobe@latest;
+go install -v github.com/tomnomnom/anew@latest;
 go install -v github.com/lc/subjs@latest;
 go install -v github.com/ffuf/ffuf@latest;
 go install -v github.com/jaeles-project/gospider@latest;
@@ -43,7 +43,6 @@ go install github.com/hakluke/hakrawler@latest;
 go install github.com/hakluke/hakrevdns@latest;
 go install github.com/hakluke/hakcheckurl@latest;
 go install -v github.com/hakluke/haktrails@latest;
-go install -v github.com/tomnomnom/anew@latest;
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
@@ -60,7 +59,6 @@ go install -v github.com/projectdiscovery/notify/cmd/notify@latest;
 go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest;
 go install github.com/projectdiscovery/katana/cmd/katana@latest;
 go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest;
-go install -v github.com/projectdiscovery/dnsprobe@latest;
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
@@ -84,4 +82,3 @@ echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 printf "Done\n" 
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-
